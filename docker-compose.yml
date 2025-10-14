@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    restart: always
+    environment:
+      # Variáveis opcionais da sua aplicação
+      - ENV=production
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Mapeia o código local (útil para desenvolvimento)
+      - .:/app
