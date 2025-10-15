@@ -22,7 +22,7 @@ def validar(cpf):
     else:
         return cpf_invalido(cpf)
 
-@app.route('/validar_cpf', methods=['POST'])    
+@app.route('/validar_cnpj', methods=['POST'])    
 @app.route('/validar_cnpj/', methods=['POST'])
 def validar_cnpj_endpoint():
     cnpj = request.json.get('cnpj','')
