@@ -17,7 +17,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expõe a porta que o Gunicorn vai usar
-EXPOSE 8000
+EXPOSE 5000
 
 # Comando padrão para rodar o Gunicorn
 # (ajuste o nome do módulo e app conforme sua estrutura)
