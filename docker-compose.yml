@@ -6,6 +6,8 @@ services:
       # Variáveis opcionais da sua aplicação
       - ENV=production
       - PYTHONUNBUFFERED=1
+    expose:
+      - 5000
     volumes:
       # Mapeia o código local (útil para desenvolvimento)
       - .:/app
